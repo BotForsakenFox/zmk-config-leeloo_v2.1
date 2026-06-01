@@ -19,16 +19,3 @@ include:
     shield: leeloo_rev3_right nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: settings_reset
-
-on:
-  push:
-    paths:
-      - "config/**"
-  pull_request:
-    paths:
-      - "config/**"
-  workflow_dispatch:
-
-jobs:
-  build:
-    uses: ClicketySplit/zmk/.github/workflows/build-user-config.yml@clickety_split_series_zmk_v3.5_power_domains
